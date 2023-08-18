@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #7c7676;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+#quote {
+    font-size: 18px;
+    margin: 20px 0;
+    transition: font-size 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+/* Additional styles for font size controls */
+.font-size-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.font-size-controls button {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Additional styles for mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .controls select,
+    .controls button {
+        margin: 5px 0;
+    }
+}
